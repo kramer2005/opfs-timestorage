@@ -27,8 +27,5 @@ setup:
 	@mkdir -p tmp
 	@mkdir -p lib
 	@mkdir -p dist
-	if [ ! -d "emsdk" ]; then $(MAKE) emsdk; fi
-	@echo "Configuring EMSDK..."
-	@source $(CURDIR)/emsdk/emsdk_env.sh
 
 .PHONY: build setup libs

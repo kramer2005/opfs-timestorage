@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:ts": "tsc",
-    "build:emcc": "make",
-    "build": "pnpm run build:ts && pnpm run build:emcc"
+    "build:emcc": "/bin/bash -c \"source emsdk/emsdk_env.sh\" && make",
+    "build": "npm run build:ts && npm run build:emcc"
   },
   "keywords": [],
   "author": "",
