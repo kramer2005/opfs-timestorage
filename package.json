@@ -1,0 +1,21 @@
+{
+  "name": "opfs-timestorage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:ts": "tsc",
+    "build:emcc": "make",
+    "build": "pnpm run build:ts && pnpm run build:emcc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/emscripten": "^1.39.13",
+    "@types/node": "^22.5.5"
+  }
+}
